@@ -1,0 +1,35 @@
+
+
+#left_half{
+    padding-left:0%;
+    float: left;
+    width: 30%;
+   
+}
+
+#right_half {
+    padding-right: 0%;
+    float: right;
+    width: 70%;
+    
+    text-align: center;
+    display: flex;
+        flex-direction: column-reverse;
+    
+}
+
+.reverse {
+    display:flex;
+    flex-direction: column-reverse;
+    align-items:flex-start;
+    padding-left:15%;
+    
+    
+}
+
+#stack_box{
+    border: 1px solid black;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 50px;
+}

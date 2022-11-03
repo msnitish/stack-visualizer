@@ -1,0 +1,24 @@
+node_modules
+notes.md 
+
+#####
+# OS X temporary files
+#
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+.DS_Store
+
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+.Trashes
+
+# c.f. http://www.westwind.com/reference/os-x/invisibles.html
+*.swp
+
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+# vscode related
+.vscode

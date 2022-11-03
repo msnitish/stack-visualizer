@@ -1,0 +1,95 @@
+<%- include('header.ejs') %>
+
+<br>
+<div class="container" id="left_half">
+<div class="container">
+Number of elements in stack currently : <%= size %>
+</div>
+<div class="container">
+    Size of stack : <%= max_size %>
+</div>
+<div class="container">
+<form action="/set_size" method="post">
+    <br>
+    <label for="size">Set the size of stack</label><br>
+    <input type="number" min="1" oninput="validity.valid||(value='');" onpress="isNumber(event)" id="size_input" name="max_size" required> 
+    <input type="submit" value="Submit" id="set_size">
+</form>
+</div>
+
+<br>
+
+<div class="container">
+<form action="/push" method="post">
+    <label for="push">Push</label><br>
+    <input type="number" step="1" id="push_input" name="push_number" required>
+    <input type="submit" value="Submit" id="push">
+</form>
+</div>
+
+<br>
+
+<div class="container">
+<form action="/pop" method="post">
+    <label for="pop">Pop</label>
+    <input type="submit" value="Submit" id="pop">
+</form>
+</div>
+
+<br>
+
+ <% if(error_code != "0"){ %> 
+     <% if( error_code  == "1"){  %>   
+            <div class="container">
+                <p class="text-danger">
+                    Stack is already full. Cannot push more elements into it. <br>
+                    Please increase the maximum size of stack to push more elements.
+                </p>
+            </div>
+       <% } else {  %> 
+        <div class="container">
+            <p class="text-danger">
+              Stack is empty. Cannot pop elements. <br>
+              Please push more elements to the stack.
+            </p>
+        </div>
+        <% } %>
+ <% } %>  
+
+</div>
+
+
+
+<div class="container" id="right_half">
+    <div class="reverse">
+    Current Stack  
+    </div>
+    <div class="reverse">
+     <% for(let i=0; i < stack.items.length; i++){ %>
+          <div id="stack_box"> <%= stack.items[i] %> </div>  
+                <% } %>
+                
+    </div>
+  
+</div>
+
+
+
+
+<script language="JavaScript">
+
+    // this prevents from typing non-number text, including "e".
+    function isNumber(evt) {
+        evt = (evt) ? evt : window.event;
+        let charCode = (evt.which) ? evt.which : evt.keyCode;
+        if ((charCode > 31 && (charCode < 48 || charCode > 57)) && charCode !== 46) {
+            evt.preventDefault();
+        } else {
+            return true;
+        }
+    }
+</script>
+
+
+
+<%- include('footer.ejs') %>
