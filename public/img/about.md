@@ -1,0 +1,1 @@
+### This directory serves as an image store
