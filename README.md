@@ -10,18 +10,20 @@ A simple Node.js app using [Express 4](http://expressjs.com/) which serves as a 
 ## Running Locally
 
 Make sure you have [Node.js](http://nodejs.org/) installed.
-
+### 1. Clone the repository 
 ```sh
-# Clone the repository 
-git clone  
-
-# Change directory to the project's root directory
-cd node-js-sample
-
-# Clean Install the required packages and dependencies.
+git clone https://github.com/msnitish/stack-visualizer.git
+```
+### 2. Change directory to the project's root directory
+```
+cd stack-visualizer
+```
+### 3. Clean Install the required packages and dependencies.
+```
 npm ci
+```
 
-# Start the Stack Visualizer application.
+### 4. Start the Stack Visualizer application.
 npm start
 ```
 
