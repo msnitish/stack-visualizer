@@ -39,8 +39,8 @@ Your app should now be running on [localhost:5000](http://localhost:5000/).
 ## Validations 
 * `Set the size of stack` and `push` input fields do not take empty input.
 * `Set the size of stack` input field takes only positive integral inputs.
-* When `push` operation is performed while the stack is full, an error message is displayed.
-* When `pop` operation is performed while the stack is empty, an error message is displayed.
+* If `push` operation is performed while the stack is full, an error message is displayed.
+* If `pop` operation is performed while the stack is empty, an error message is displayed.
 
 <img src="https://raw.githubusercontent.com/msnitish/stack-visualizer/main/public/img/mug_2.png" alt="drawing" width="70%"/>
 <img src="https://raw.githubusercontent.com/msnitish/stack-visualizer/main/public/img/mug_3.png" alt="drawing" width="70%"/>
