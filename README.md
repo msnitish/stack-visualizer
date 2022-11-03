@@ -1,6 +1,9 @@
 
 # Stack Visualizer Application
 
+
+<img src="https://raw.githubusercontent.com/msnitish/stack-visualizer/main/public/img/mug_1.png" alt="drawing" width="70%"/>
+
 A simple Node.js app using [Express 4](http://expressjs.com/) which serves as a web interface to :
 * Push elements to the stack
 * Pop elements from the stack
