@@ -15,15 +15,15 @@ Make sure you have [Node.js](http://nodejs.org/) installed.
 git clone https://github.com/msnitish/stack-visualizer.git
 ```
 ### 2. Change directory to the project's root directory
-```
+```sh
 cd stack-visualizer
 ```
 ### 3. Clean Install the required packages and dependencies.
-```
+```sh
 npm ci
 ```
-
 ### 4. Start the Stack Visualizer application.
+```sh
 npm start
 ```
 
